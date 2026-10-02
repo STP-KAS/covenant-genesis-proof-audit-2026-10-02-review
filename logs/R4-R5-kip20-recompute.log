@@ -1,0 +1,19 @@
+KCC-23 vector: computed c86366cec738e9a1578b2d871ee493dcaabfd79156810f13f3b62429859e394e
+               expected c86366cec738e9a1578b2d871ee493dcaabfd79156810f13f3b62429859e394e  -> MATCH
+  reversed txid: False | reversed digest: False
+manifest bytes: 64711 version: 6 network: mainnet
+authorizedOutputs: 1 | keys: ['index', 'redeemScript', 'scriptPublicKey', 'scriptVersion', 'state', 'value'] | outputIndex: 0
+DOTK registry: computed ee2128c03dfac7f6d74734bb3c879bd999434c47a55945b8a6daae2a1e4a21de
+               expected ee2128c03dfac7f6d74734bb3c879bd999434c47a55945b8a6daae2a1e4a21de  -> MATCH
+  reversed txid matches: False | reversed digest matches: False
+output0: index 0 value 100000000 scriptVersion 0 spk len 35 redeem len 6342
+spk == aa20||blake2b256(redeem)||87 (unkeyed): True
+gapAbi keys: ['compiler_version', 'contracts', 'schema_version', 'structs']
+gapAbi.contracts: ['DotkGap'] | deedAbi.contracts: ['DotkDeed']
+gap contract DotkGap: bytecode len 6342; equals redeemScript: True
+deed contract DotkDeed: bytecode len 3220; equals redeemScript: False
+state = 2000000000000000... len 66
+deedTemplateHash offset in redeemScript: 5604 | occurrences: 2
+gapTemplateHash == gapAbi.DotkGap template_hash: True
+ALL CORE MATCHES: True
+exit=0

@@ -1,0 +1,13 @@
+$ argentc genesis verify annotated.json --covenant-id 656c9d1c4d30b77b2418ed4ad1421315eef55fcf852393bc09183b95983a9c48 --require-argent
+# annotated.json = V3 package plus proof.value.proof.outputs[0].audited_by and proof.value.proof.source_url
+covenant ID matches: 656c9d1c4d30b77b2418ed4ad1421315eef55fcf852393bc09183b95983a9c48
+checked: Argent artifacts, authored states, and derived runtime state
+source correspondence was not checked
+exit=0
+
+$ argentc genesis verify annotated-artifact.json --covenant-id 656c9d1c4d30b77b2418ed4ad1421315eef55fcf852393bc09183b95983a9c48 --require-argent --source tests/fixtures/emit/capsule_route_context/app.ag
+# annotated-artifact.json = V3 package plus proof.value.primary.audit_status = "verified"
+covenant ID matches: 656c9d1c4d30b77b2418ed4ad1421315eef55fcf852393bc09183b95983a9c48
+checked: Argent artifacts, authored states, and derived runtime state
+source correspondence matches the primary app and dependency artifact IDs
+exit=0

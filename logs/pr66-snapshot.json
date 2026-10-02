@@ -1,0 +1,23 @@
+{
+ "number": 66,
+ "state": "open",
+ "draft": false,
+ "merged": false,
+ "mergeable": true,
+ "mergeable_state": "blocked",
+ "title": "Add layered covenant genesis proof APIs and CLI tooling",
+ "created_at": "2026-10-02T11:22:35Z",
+ "updated_at": "2026-10-02T13:47:33Z",
+ "commits": 12,
+ "additions": 3231,
+ "deletions": 97,
+ "changed_files": 22,
+ "comments": 0,
+ "review_comments": 0,
+ "user": "michaelsutton",
+ "head": "9592dd996d2503eb166335d6da92548de193877f",
+ "base": "b312deda6fe10f6493c8d49eb748e3f61860458a",
+ "assignees": [],
+ "requested_reviewers": [],
+ "labels": []
+}

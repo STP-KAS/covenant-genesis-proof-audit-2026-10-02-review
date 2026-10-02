@@ -1,0 +1,27 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1m 00s
+     Running unittests src/lib.rs (/workspace/cgpa-review/target/debug/deps/argent_genesis-30863822c9b7b55d)
+
+running 15 tests
+test package::tests::bootstraps_reject_unknown_fields_and_published_claims ... ok
+test package::tests::json_parsing_does_not_replace_or_verify_the_claim ... ok
+test package::tests::malformed_packages_and_unrecognized_layers_are_rejected ... ok
+test package::tests::consensus_package_round_trip_retains_every_committed_field ... ok
+test package::tests::unsupported_versions_are_rejected_by_every_checked_operation ... ok
+test preimage::tests::proof_matches_transaction_genesis_population ... ok
+test preimage::tests::every_consensus_preimage_field_affects_the_claim ... ok
+test preimage::tests::proof_rejects_empty_repeated_and_unordered_outputs ... ok
+test package::tests::authored_output_json_preserves_tagged_value_types ... ok
+test preimage::tests::proof_checks_its_claim_before_the_external_id ... ok
+test sil::tests::independent_abis_keep_same_named_contracts_and_structs_separate ... ok
+test sil::tests::proof_rejects_invalid_abi_contract_and_runtime_state ... ok
+test sil::tests::bootstrap_round_trip_composes_the_same_independent_abi_proof ... ok
+test sil::tests::package_round_trip_keeps_independent_abis_unchanged ... ok
+test sil::tests::proof_detects_changed_physical_state_and_external_id ... ok
+
+test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+
+real	1m1.131s
+user	2m43.065s
+sys	0m28.582s
+exit=0

@@ -1,0 +1,21 @@
+$ argentc genesis compose tests/fixtures/emit/capsule_route_context/app.ag --bootstrap tests/fixtures/genesis_cli/expanded.json --out <tmp>/asset-genesis-proof.json
+wrote <tmp>/asset-genesis-proof.json
+covenant ID: 656c9d1c4d30b77b2418ed4ad1421315eef55fcf852393bc09183b95983a9c48
+exit=0
+claimed id in file: 656c9d1c4d30b77b2418ed4ad1421315eef55fcf852393bc09183b95983a9c48
+
+$ argentc genesis verify <file> --covenant-id <id> --require-argent --source tests/fixtures/emit/capsule_route_context/app.ag
+covenant ID matches: 656c9d1c4d30b77b2418ed4ad1421315eef55fcf852393bc09183b95983a9c48
+checked: Argent artifacts, authored states, and derived runtime state
+source correspondence matches the primary app and dependency artifact IDs
+exit=0
+
+$ argentc genesis verify <file> --covenant-id <id>   (default path, no --source)
+covenant ID matches: 656c9d1c4d30b77b2418ed4ad1421315eef55fcf852393bc09183b95983a9c48
+checked: Argent artifacts, authored states, and derived runtime state
+source correspondence was not checked
+exit=0
+
+$ argentc genesis verify <file> --covenant-id 000..000 --require-argent
+argentc: <tmp>/asset-genesis-proof.json: genesis proof produces covenant ID 656c9d1c4d30b77b2418ed4ad1421315eef55fcf852393bc09183b95983a9c48, expected 0000000000000000000000000000000000000000000000000000000000000000
+exit=1
